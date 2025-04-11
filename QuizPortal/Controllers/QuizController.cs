@@ -59,10 +59,10 @@ namespace QuizPortal.Controllers
                     return View(CreateQuizViewDto);
                 }
 
-                //Distinct answers control
-                foreach(var q in CreateQuizViewDto.QuestionArr)
+                // Distinct answers control
+                foreach (var q in CreateQuizViewDto.QuestionArr)
                 {
-                    if(q.AnswerA == q.AnswerB ||
+                    if (q.AnswerA == q.AnswerB ||
                         q.AnswerA == q.AnswerC ||
                         q.AnswerA == q.AnswerD ||
                         q.AnswerB == q.AnswerC ||
@@ -83,11 +83,11 @@ namespace QuizPortal.Controllers
 
                 if (selectedArt == null)
                 {
-                    return View(CreateQuizViewDto);
+                    return View("EditQuiz",CreateQuizViewDto);
                 }
 
                 var quiz = _mapper.Map<Quiz>(selectedArt);
-
+                await quizRepository.DeleteQuizAsync(quiz);
                 await quizRepository.CreateQuizAsync(quiz);
                 await _repositoryFactory.SaveAsync();
 
@@ -109,6 +109,96 @@ namespace QuizPortal.Controllers
             }
 
             return View(CreateQuizViewDto);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            if (HttpContext.Session.GetString(Constants.SessionUserId) == null)
+            {
+                return Redirect(Url.Action("Login", "User"));
+            }
+
+            var quizRepository = _repositoryFactory.GetQuizRepository();
+            var questionRepository = _repositoryFactory.GetQuestionRepository();
+
+            var quiz = await quizRepository.GetQuizAsync(id);
+            if (quiz == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            var questions = await questionRepository.GetAllQuestionsAsync(id);
+
+            var quizDto = _mapper.Map<QuizDto>(quiz);
+            var questionDtos = _mapper.Map<List<QuestionDto>>(questions);
+
+            CreateQuizViewDto = new CreateQuizViewDto
+            {
+                QuizId = quiz.Id,
+                SelectedArticleId = quiz.ArticleId,
+                QuestionArr = questionDtos.ToArray(),
+                ArticleList = (await _wiredProxy.GetLastFiveArticlesAsync()).ToList(),
+                ErrorMessage = null
+            };
+
+            //return View("EditQuiz", CreateQuizViewDto);
+            return View();
+        }
+
+        [HttpPost]
+        [ActionName("Edit")]
+        public async Task<IActionResult> EditPost()
+        {
+            CreateQuizViewDto.ErrorMessage = null;
+
+            if (ModelState.IsValid)
+            {
+                // Validation logic...
+
+                var transaction = await _repositoryFactory.BeginTransactionAsync();
+                var quizRepository = _repositoryFactory.GetQuizRepository();
+                var questionRepository = _repositoryFactory.GetQuestionRepository();
+
+                var quiz = await quizRepository.GetQuizAsync(CreateQuizViewDto.QuizId);
+                if (quiz == null)
+                {
+                    return RedirectToAction("Index");
+                }
+
+                // Update quiz properties as needed
+                // For example, if you have a Title or Description that can be updated
+               
+
+                // Since ArticleId cannot be changed, we skip updating it
+
+                // Update the quiz
+                quizRepository.UpdateQuiz(quiz);
+                await _repositoryFactory.SaveAsync();
+
+                // Delete existing questions
+                var existingQuestions = await questionRepository.GetAllQuestionsAsync(quiz.Id);
+                foreach (var existingQuestion in existingQuestions)
+                {
+                    questionRepository.DeleteQuestion(existingQuestion);
+                }
+                await _repositoryFactory.SaveAsync();
+
+                // Add updated questions
+                foreach (var item in CreateQuizViewDto.QuestionArr)
+                {
+                    var ques = _mapper.Map<Question>(item);
+                    ques.QuizId = quiz.Id;
+                    await questionRepository.CreateQuestionAsync(ques);
+                }
+                await _repositoryFactory.SaveAsync();
+
+                transaction.Commit();
+
+                return RedirectToAction("Index", "Quiz");
+            }
+
+            return View("EditQuiz", CreateQuizViewDto);
         }
 
         [HttpGet]
@@ -166,7 +256,7 @@ namespace QuizPortal.Controllers
             var quizFromDb = await quizRepository.GetQuizAsync(id);
 
             // If quiz does not exist
-            if(quizFromDb == null)
+            if (quizFromDb == null)
             {
                 return Redirect(Url.Action("Index", "Quiz"));
             }
@@ -176,12 +266,16 @@ namespace QuizPortal.Controllers
             var quizDto = _mapper.Map<QuizDto>(quizFromDb);
             var questionDtoList = _mapper.Map<List<QuestionDto>>(questionList);
 
-            var quizViewDto = new QuizViewDto();
-
-            quizViewDto.QuizDto = quizDto;
-            quizViewDto.QuestionDtoList = questionDtoList;
+            var quizViewDto = new QuizViewDto
+            {
+                QuizDto = quizDto,
+                QuestionDtoList = questionDtoList
+            };
 
             return View(quizViewDto);
         }
     }
+
+
+
 }

@@ -13,5 +13,6 @@ namespace QuizPortal.Repositories
         Task<ICollection<Quiz>> GetAllQuizzesAsync();
 
         void DeleteQuiz(Quiz quiz);
+        void UpdateQuiz(Quiz quiz); // Add this method
     }
 }

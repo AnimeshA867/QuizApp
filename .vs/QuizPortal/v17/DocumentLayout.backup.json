@@ -1,7 +1,56 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\wwwroot\\js\\quiz.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\wwwroot\\js\\quiz.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\views\\quiz\\editquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\views\\quiz\\editquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\views\\quiz\\createquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\views\\quiz\\createquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\models\\dtos\\createquizviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\models\\dtos\\createquizviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\repositories\\iquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\repositories\\iquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\repositories\\iquizrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\repositories\\iquizrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\views\\quiz\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\views\\quiz\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|d:\\class notes\\csit 6th sem\\by animesh\\dotnetcore--quiz-portal-master\\quizportal\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18FD7D50-830E-44A0-9875-E1CA120C7F42}|QuizPortal\\QuizPortal.csproj|solutionrelative:quizportal\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +58,156 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuizPortal\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "QuizPortal\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T08:39:40.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "QuizPortal\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "QuizPortal\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T08:38:53.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IQuestionRepository.cs",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Repositories\\IQuestionRepository.cs",
+              "RelativeDocumentMoniker": "QuizPortal\\Repositories\\IQuestionRepository.cs",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Repositories\\IQuestionRepository.cs",
+              "RelativeToolTip": "QuizPortal\\Repositories\\IQuestionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:32:17.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IQuizRepository.cs",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Repositories\\IQuizRepository.cs",
+              "RelativeDocumentMoniker": "QuizPortal\\Repositories\\IQuizRepository.cs",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Repositories\\IQuizRepository.cs",
+              "RelativeToolTip": "QuizPortal\\Repositories\\IQuizRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:29:12.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Quiz.js",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\wwwroot\\js\\Quiz.js",
+              "RelativeDocumentMoniker": "QuizPortal\\wwwroot\\js\\Quiz.js",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\wwwroot\\js\\Quiz.js*",
+              "RelativeToolTip": "QuizPortal\\wwwroot\\js\\Quiz.js*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-11T07:02:22.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\Quiz\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuizPortal\\Views\\Quiz\\Index.cshtml",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\Quiz\\Index.cshtml",
+              "RelativeToolTip": "QuizPortal\\Views\\Quiz\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T07:00:12.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\User\\Register.cshtml",
+              "RelativeDocumentMoniker": "QuizPortal\\Views\\User\\Register.cshtml",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\User\\Register.cshtml",
+              "RelativeToolTip": "QuizPortal\\Views\\User\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T06:55:32.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "QuizPortal\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "QuizPortal\\Views\\User\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T06:55:19.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditQuiz.cshtml",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\Quiz\\EditQuiz.cshtml",
+              "RelativeDocumentMoniker": "QuizPortal\\Views\\Quiz\\EditQuiz.cshtml",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\Quiz\\EditQuiz.cshtml",
+              "RelativeToolTip": "QuizPortal\\Views\\Quiz\\EditQuiz.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T06:51:57.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuizController.cs",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Controllers\\QuizController.cs",
+              "RelativeDocumentMoniker": "QuizPortal\\Controllers\\QuizController.cs",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Controllers\\QuizController.cs",
+              "RelativeToolTip": "QuizPortal\\Controllers\\QuizController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAgwJEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T04:45:05.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateQuiz.cshtml",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\Quiz\\CreateQuiz.cshtml",
+              "RelativeDocumentMoniker": "QuizPortal\\Views\\Quiz\\CreateQuiz.cshtml",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Views\\Quiz\\CreateQuiz.cshtml",
+              "RelativeToolTip": "QuizPortal\\Views\\Quiz\\CreateQuiz.cshtml",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAI0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T08:18:01.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateQuizViewDto.cs",
+              "DocumentMoniker": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Models\\Dtos\\CreateQuizViewDto.cs",
+              "RelativeDocumentMoniker": "QuizPortal\\Models\\Dtos\\CreateQuizViewDto.cs",
+              "ToolTip": "D:\\CLASS NOTES\\CSIT 6th SEM\\By Animesh\\dotnetcore--quiz-portal-master\\QuizPortal\\Models\\Dtos\\CreateQuizViewDto.cs",
+              "RelativeToolTip": "QuizPortal\\Models\\Dtos\\CreateQuizViewDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:37:55.163Z"
             }
           ]
         }

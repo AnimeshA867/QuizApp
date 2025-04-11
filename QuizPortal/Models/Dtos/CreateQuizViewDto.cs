@@ -4,7 +4,11 @@ using System.ComponentModel.DataAnnotations;
 namespace QuizPortal.Models.Dtos
 {
     public class CreateQuizViewDto
+
+
     {
+        public int QuizId { get; set; }
+
         [Required]
         public List<ArticleDto> ArticleList { get; set; }
 
@@ -15,5 +19,9 @@ namespace QuizPortal.Models.Dtos
         public QuestionDto[] QuestionArr { get; set; } = new QuestionDto[4];
 
         public string ErrorMessage { get; set; }
+
+       
+
+        
     }
 }

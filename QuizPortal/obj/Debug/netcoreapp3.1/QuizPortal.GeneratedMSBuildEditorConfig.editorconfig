@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = QuizPortal
-build_property.ProjectDir = /mnt/D/CLASS NOTES/CSIT 6th SEM/By Animesh/dotnetcore--quiz-portal-master/QuizPortal/
+build_property.ProjectDir = D:\CLASS NOTES\CSIT 6th SEM\By Animesh\dotnetcore--quiz-portal-master\QuizPortal\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

@@ -9,5 +9,7 @@ namespace QuizPortal.Repositories
         Task CreateQuestionAsync(Question question);
 
         Task<ICollection<Question>> GetAllQuestionsAsync(int quizId);
+
+        void DeleteQuestion(Question question);
     }
 }

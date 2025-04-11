@@ -1,0 +1,81 @@
+﻿@model QuizPortal.Models.Dtos.CreateQuizViewDto
+
+@{
+    ViewBag.Title = "Edit Quiz";
+}
+
+<h2>Edit Quiz</h2>
+
+<form asp-action="Edit" method="post">
+    <!-- Display the associated article title -->
+    <div class="form-group">
+        <label>Article</label>
+        <!-- Hidden field to keep SelectedArticleId -->
+        <input asp-for="SelectedArticleId" type="hidden" style="display:none;" />
+        @* <p class="form-control-plaintext">
+            @Model.ArticleList.FirstOrDefault(a => a.ArticleId == Model.SelectedArticleId)?.Title
+        </p> *@
+    </div>
+
+    @for (int i = 0; i < Model.QuestionArr.Length; i++)
+    {
+        <div class="card mb-3">
+            <div class="card-header">
+                Question @(i + 1)
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Question Text</label>
+                    <input asp-for="QuestionArr[@i].QuestionText" class="form-control" />
+                    <span asp-validation-for="QuestionArr[@i].QuestionText" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Answer A</label>
+                    <input asp-for="QuestionArr[@i].AnswerA" class="form-control" />
+                    <span asp-validation-for="QuestionArr[@i].AnswerA" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Answer B</label>
+                    <input asp-for="QuestionArr[@i].AnswerB" class="form-control" />
+                    <span asp-validation-for="QuestionArr[@i].AnswerB" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Answer C</label>
+                    <input asp-for="QuestionArr[@i].AnswerC" class="form-control" />
+                    <span asp-validation-for="QuestionArr[@i].AnswerC" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Answer D</label>
+                    <input asp-for="QuestionArr[@i].AnswerD" class="form-control" />
+                    <span asp-validation-for="QuestionArr[@i].AnswerD" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Correct Answer</label>
+                    <select asp-for="QuestionArr[@i].CorrectAnswer" class="form-control">
+                        <option value="">-- Select Correct Answer --</option>
+                        <option value="A">Answer A</option>
+                        <option value="B">Answer B</option>
+                        <option value="C">Answer C</option>
+                        <option value="D">Answer D</option>
+                    </select>
+                    <span asp-validation-for="QuestionArr[@i].CorrectAnswer" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-danger">
+            @Model.ErrorMessage
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">Update Quiz</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

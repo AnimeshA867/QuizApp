@@ -40,6 +40,18 @@ function loadDataTable() {
             { "data": "articleId", "width": "20%" },
             { "data": "createdStr", "width": "20%" },
             {
+                "data": "id", 
+                "render": function (data,type,row,meta) {
+                    return `<div class="text-center">
+                        <a class="btn btn-primary text-white" style="cursor:pointer; width: 120px;"
+                            href="/Quiz/Edit?id=${row.id}">
+                            Edit
+                        </a>
+                    </div>`;
+                },
+                "width": "20%"
+        },
+            {
                 "data": "id",
                 "render": function (data) {
                     return `<div class="text-center">
@@ -77,6 +89,8 @@ function loadDataTable() {
         });
     }).draw();
 }
+
+
 
 function Delete(deleteUrl) {
     swal({
